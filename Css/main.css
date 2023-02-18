@@ -1,0 +1,149 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   padding-top: 5px;
+}
+
+/* Added a two way colour to the background*/
+
+section{
+   width: 100%;
+   padding: 78px;
+   background: linear-gradient(
+      to right,
+      #00172d 0%,
+      #00264d 45%,
+      #00498d 45%,
+      #0052a2 100%
+    );
+}
+
+.about-text{
+   width: 550px;
+   height: 570px;
+}
+
+/* Added two CSS filters ( Blur effect - Saturation)*/
+
+section img{
+   height: 600px;
+   width: 420px;
+   -webkit-filter: blur(5px);
+   filter: blur(5px);
+   
+}
+
+section img:hover{
+   filter: saturate(1.6);
+   transition: 1s;
+}
+
+.main{
+   width: 1130px;
+   max-width: 100%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+
+/* Header and Hover text */
+
+h1{
+   color: black;
+   margin: 20px 0px 20px;
+   font-size: 65px;
+   font-family: 'Russo One', sans-serif;
+
+}
+
+h1:hover{
+   color: White;
+   transition: 1s;
+}
+
+h4{
+   color: black;
+   font-size: 25px;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+   font-family: 'Russo One', sans-serif;
+
+}
+
+/* Bullet point text list */
+
+ol li{
+   font-family: 'Russo One', sans-serif;
+   padding-bottom: 4px;
+   color:black;
+}
+
+ol li:first-child{
+   color:black;
+   cursor: pointer;
+}
+
+ol li:nth-child(3){
+   color:black;
+   cursor: pointer;
+}
+
+ol li:nth-child(5){
+   color:black;
+   cursor: pointer;
+}
+
+ol li:hover{
+   color: white;
+   transition: 1s;
+}
+
+/*  Paragragh text */
+
+p{
+   font-family:'Russo One', sans-serif;
+   font-size: large;
+   padding-bottom: 10px;
+}
+/* Responsive Image ( method leanred from first sem)*/
+
+@media only screen and (max-width: 500px) { 
+   section img{  
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      top: 100%;
+      bottom: 0;
+      
+  }
+  body{
+   overflow: scroll;
+  }
+  h1{
+   font-size: 50px;
+  }
+  h4{
+   font-size: 20px;
+  }
+  section{
+   background: linear-gradient(
+      to right,
+      lightblue 0%,
+      lightblue 50%,
+      lightgrey 50%,
+      lightgrey 100%
+    );
+  }
+  section{
+   height: 90rem;
+  }
+}
+
+
+
+
+
+
